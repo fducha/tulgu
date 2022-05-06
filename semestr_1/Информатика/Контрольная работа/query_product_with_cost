@@ -1,0 +1,10 @@
+SELECT *, 
+(SELECT sum(quantity * cost) AS price
+FROM needed_materials
+INNER JOIN materials ON materials.id = needed_materials.material_id
+WHERE needed_materials.product_id = products.id) AS prime_cost,
+((SELECT sum(quantity * cost) AS price
+FROM needed_materials
+INNER JOIN materials ON materials.id = needed_materials.material_id
+WHERE needed_materials.product_id = products.id) + bonus) AS full_cost
+FROM products
