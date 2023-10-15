@@ -1,0 +1,5 @@
+C:\Users\fducha\Documents\ТулГу\Программирование\Плюсы\Контрольная\Deter\x64\Debug\Deter.vcxproj.AssemblyReference.cache
+C:\Users\fducha\Documents\ТулГу\Программирование\Плюсы\Контрольная\Deter\x64\Debug\Deter.vcxproj.SuggestedBindingRedirects.cache
+C:\Users\fducha\Documents\ТулГу\Программирование\Плюсы\Контрольная\Deter\x64\Debug\Deter.exe
+C:\Users\fducha\Documents\ТулГу\Программирование\Плюсы\Контрольная\Deter\x64\Debug\Deter.MyForm.resources
+C:\Users\fducha\Documents\ТулГу\Программирование\Плюсы\Контрольная\Deter\x64\Debug\Deter.vcxproj.GenerateResource.cache

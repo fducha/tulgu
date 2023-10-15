@@ -1,0 +1,74 @@
+<!DOCTYPE kmpdoc>
+<kmpdoc version="4">
+    <axes color="#282828" tic-width="0.29999999999999999" tic-legth="0.5" width="0.20000000000000001">
+        <show-axes>1</show-axes>
+        <show-arrows>1</show-arrows>
+        <show-label>1</show-label>
+        <xmin>-1.03562610229277</xmin>
+        <xmax>5.364373897707221</xmax>
+        <ymin>-2.59960707269155</ymin>
+        <ymax>3.800392927308451</ymax>
+    </axes>
+    <grid color="#aeaeae" width="0.10000000000000001">
+        <mode>1</mode>
+    </grid>
+    <scale>
+        <tic-x-mode>0</tic-x-mode>
+        <tic-y-mode>0</tic-y-mode>
+        <tic-x>1</tic-x>
+        <tic-y>1</tic-y>
+    </scale>
+    <function f1-visible="0" f0-width="0.29999999999999999" f1-color="#0d866a" integral-show-tangent-field="0" f2-width="0.29999999999999999" integral-gradient="0;#000000,1;#ffffff," f2-style="SolidLine" use-parameter-slider="0" integral-style="SolidLine" integral-show-extrema="0" parameter-slider="0" f1-show-plot-name="0" integral-visible="0" f1-gradient="0;#000000,1;#ffffff," integral-width="0.29999999999999999" f2-color="#ed836a" f0-visible="1" f0-color="#191970" f2-show-plot-name="0" integral-show-plot-name="0" f1-show-extrema="0" f2-show-tangent-field="0" f2-show-extrema="0" use-parameter-list="0" f0-show-plot-name="0" f1-use-gradient="0" f1-show-tangent-field="0" f1-width="0.29999999999999999" f0-use-gradient="0" f2-gradient="0;#000000,1;#ffffff," f0-gradient="0;#000000,1;#ffffff," f1-style="SolidLine" f0-show-tangent-field="0" integral-color="#c0f572" integral-use-gradient="0" f2-visible="0" f0-show-extrema="0" f0-style="SolidLine" f2-use-gradient="0" type="cartesian">
+        <equation-0 step="0.05">f(x) = 0<differential x="0" y="1"/>
+        </equation-0>
+        <arg-min use="1">0</arg-min>
+        <arg-max use="1">1</arg-max>
+    </function>
+    <function f1-visible="0" f0-width="0.29999999999999999" f1-color="#4aa5e9" integral-show-tangent-field="0" f2-width="0.29999999999999999" integral-gradient="0;#000000,1;#ffffff," f2-style="SolidLine" use-parameter-slider="0" integral-style="SolidLine" integral-show-extrema="0" parameter-slider="0" f1-show-plot-name="0" integral-visible="0" f1-gradient="0;#000000,1;#ffffff," integral-width="0.29999999999999999" f2-color="#eb63f7" f0-visible="1" f0-color="#006400" f2-show-plot-name="0" integral-show-plot-name="0" f1-show-extrema="0" f2-show-tangent-field="0" f2-show-extrema="0" use-parameter-list="0" f0-show-plot-name="0" f1-use-gradient="0" f1-show-tangent-field="0" f1-width="0.29999999999999999" f0-use-gradient="0" f2-gradient="0;#000000,1;#ffffff," f0-gradient="0;#000000,1;#ffffff," f1-style="SolidLine" f0-show-tangent-field="0" integral-color="#3fce33" integral-use-gradient="0" f2-visible="0" f0-show-extrema="0" f0-style="SolidLine" f2-use-gradient="0" type="cartesian">
+        <equation-0 step="0.05">g(x) = 2x−2<differential x="0" y="1"/>
+        </equation-0>
+        <arg-min use="1">1</arg-min>
+        <arg-max use="1">1.5</arg-max>
+    </function>
+    <function f1-visible="0" f0-width="0.29999999999999999" f1-color="#8d38eb" integral-show-tangent-field="0" f2-width="0.29999999999999999" integral-gradient="0;#000000,1;#ffffff," f2-style="SolidLine" use-parameter-slider="0" integral-style="SolidLine" integral-show-extrema="0" parameter-slider="0" f1-show-plot-name="0" integral-visible="0" f1-gradient="0;#000000,1;#ffffff," integral-width="0.29999999999999999" f2-color="#0edf3a" f0-visible="1" f0-color="#ff4500" f2-show-plot-name="0" integral-show-plot-name="0" f1-show-extrema="0" f2-show-tangent-field="0" f2-show-extrema="0" use-parameter-list="0" f0-show-plot-name="0" f1-use-gradient="0" f1-show-tangent-field="0" f1-width="0.29999999999999999" f0-use-gradient="0" f2-gradient="0;#000000,1;#ffffff," f0-gradient="0;#000000,1;#ffffff," f1-style="SolidLine" f0-show-tangent-field="0" integral-color="#db5af1" integral-use-gradient="0" f2-visible="0" f0-show-extrema="0" f0-style="SolidLine" f2-use-gradient="0" type="cartesian">
+        <equation-0 step="0.05">h(x) = 1<differential x="0" y="1"/>
+        </equation-0>
+        <arg-min use="1">1.5</arg-min>
+        <arg-max use="1">2.5</arg-max>
+    </function>
+    <function f1-visible="0" f0-width="0.29999999999999999" f1-color="#07dffd" integral-show-tangent-field="0" f2-width="0.29999999999999999" integral-gradient="0;#000000,1;#ffffff," f2-style="SolidLine" use-parameter-slider="0" integral-style="SolidLine" integral-show-extrema="0" parameter-slider="0" f1-show-plot-name="0" integral-visible="0" f1-gradient="0;#000000,1;#ffffff," integral-width="0.29999999999999999" f2-color="#0ae826" f0-visible="1" f0-color="#808000" f2-show-plot-name="0" integral-show-plot-name="0" f1-show-extrema="0" f2-show-tangent-field="0" f2-show-extrema="0" use-parameter-list="0" f0-show-plot-name="0" f1-use-gradient="0" f1-show-tangent-field="0" f1-width="0.29999999999999999" f0-use-gradient="0" f2-gradient="0;#000000,1;#ffffff," f0-gradient="0;#000000,1;#ffffff," f1-style="SolidLine" f0-show-tangent-field="0" integral-color="#3809ab" integral-use-gradient="0" f2-visible="0" f0-show-extrema="0" f0-style="SolidLine" f2-use-gradient="0" type="cartesian">
+        <equation-0 step="0.05">i(x) = 6−2x<differential x="0" y="1"/>
+        </equation-0>
+        <arg-min use="1">2.5</arg-min>
+        <arg-max use="1">3</arg-max>
+    </function>
+    <function f1-visible="0" f0-width="0.29999999999999999" f1-color="#2f1aa1" integral-show-tangent-field="0" f2-width="0.29999999999999999" integral-gradient="0;#000000,1;#ffffff," f2-style="SolidLine" use-parameter-slider="0" integral-style="SolidLine" integral-show-extrema="0" parameter-slider="0" f1-show-plot-name="0" integral-visible="0" f1-gradient="0;#000000,1;#ffffff," integral-width="0.29999999999999999" f2-color="#104d7f" f0-visible="1" f0-color="#ff1493" f2-show-plot-name="0" integral-show-plot-name="0" f1-show-extrema="0" f2-show-tangent-field="0" f2-show-extrema="0" use-parameter-list="0" f0-show-plot-name="0" f1-use-gradient="0" f1-show-tangent-field="0" f1-width="0.29999999999999999" f0-use-gradient="0" f2-gradient="0;#000000,1;#ffffff," f0-gradient="0;#000000,1;#ffffff," f1-style="SolidLine" f0-show-tangent-field="0" integral-color="#05dad0" integral-use-gradient="0" f2-visible="0" f0-show-extrema="0" f0-style="SolidLine" f2-use-gradient="0" type="cartesian">
+        <equation-0 step="0.05">j(x) = 0<differential x="0" y="1"/>
+        </equation-0>
+        <arg-min use="1">3</arg-min>
+        <arg-max use="1">4</arg-max>
+    </function>
+    <function f1-visible="0" f0-width="0.5" f1-color="#ed55be" integral-show-tangent-field="0" f2-width="0.29999999999999999" integral-gradient="0;#000000,1;#ffffff," f2-style="SolidLine" use-parameter-slider="0" integral-style="SolidLine" integral-show-extrema="0" parameter-slider="0" f1-show-plot-name="0" integral-visible="0" f1-gradient="0;#000000,1;#ffffff," integral-width="0.29999999999999999" f2-color="#e9803f" f0-visible="1" f0-color="#1d36a3" f2-show-plot-name="0" integral-show-plot-name="0" f1-show-extrema="0" f2-show-tangent-field="0" f2-show-extrema="0" use-parameter-list="0" f0-show-plot-name="0" f1-use-gradient="0" f1-show-tangent-field="0" f1-width="0.29999999999999999" f0-use-gradient="0" f2-gradient="0;#000000,1;#ffffff," f0-gradient="0;#000000,1;#ffffff," f1-style="SolidLine" f0-show-tangent-field="0" integral-color="#882dc7" integral-use-gradient="0" f2-visible="0" f0-show-extrema="0" f0-style="SolidLine" f2-use-gradient="0" type="cartesian">
+        <equation-0 step="0.05">k(x)=(16/π²)∙sin(π∙x/4)∙(sin(5∙π/8)+sin(3∙π/8)−sin(3∙π/4)−sin(π/4)) + (16/(9∙π²))∙sin(3∙π∙x/4)∙(sin(15∙π/8)+sin(9∙π/8)−sin(9∙π/4)−sin(3∙π/4))+(16/(25∙π²))∙sin(5∙π∙x/4)∙(sin(25∙π/8)+sin(15∙π/8)−sin(15∙π/4)−sin(5∙π/4))<differential x="0" y="1"/>
+        </equation-0>
+        <arg-min use="1">0</arg-min>
+        <arg-max use="1">4</arg-max>
+    </function>
+    <function f1-visible="0" f0-width="0.29999999999999999" f1-color="#1d9b04" integral-show-tangent-field="0" f2-width="0.29999999999999999" integral-gradient="0;#000000,1;#ffffff," f2-style="SolidLine" use-parameter-slider="0" integral-style="SolidLine" integral-show-extrema="0" parameter-slider="0" f1-show-plot-name="0" integral-visible="0" f1-gradient="0;#000000,1;#ffffff," integral-width="0.29999999999999999" f2-color="#21f61e" f0-visible="1" f0-color="#800000" f2-show-plot-name="0" integral-show-plot-name="0" f1-show-extrema="0" f2-show-tangent-field="0" f2-show-extrema="0" use-parameter-list="0" f0-show-plot-name="0" f1-use-gradient="0" f1-show-tangent-field="0" f1-width="0.29999999999999999" f0-use-gradient="0" f2-gradient="0;#000000,1;#ffffff," f0-gradient="0;#000000,1;#ffffff," f1-style="SolidLine" f0-show-tangent-field="0" integral-color="#9da206" integral-use-gradient="0" f2-visible="0" f0-show-extrema="0" f0-style="SolidLine" f2-use-gradient="0" type="cartesian">
+        <equation-0 step="0.05">l(x) =(16/π²)∙sin(π∙x/4)∙(sin(5∙π/8)+sin(3∙π/8)−sin(3∙π/4)−sin(π/4)) + (16/(9∙π²))∙sin(3∙π∙x/4)∙(sin(15∙π/8)+sin(9∙π/8)−sin(9∙π/4)−sin(3∙π/4))<differential x="0" y="1"/>
+        </equation-0>
+        <arg-min use="1">0</arg-min>
+        <arg-max use="1">4</arg-max>
+    </function>
+    <function f1-visible="0" f0-width="0.29999999999999999" f1-color="#554d79" integral-show-tangent-field="0" f2-width="0.29999999999999999" integral-gradient="0;#000000,1;#ffffff," f2-style="SolidLine" use-parameter-slider="0" integral-style="SolidLine" integral-show-extrema="0" parameter-slider="0" f1-show-plot-name="0" integral-visible="0" f1-gradient="0;#000000,1;#ffffff," integral-width="0.29999999999999999" f2-color="#e557c7" f0-visible="1" f0-color="#0000cd" f2-show-plot-name="0" integral-show-plot-name="0" f1-show-extrema="0" f2-show-tangent-field="0" f2-show-extrema="0" use-parameter-list="0" f0-show-plot-name="0" f1-use-gradient="0" f1-show-tangent-field="0" f1-width="0.29999999999999999" f0-use-gradient="0" f2-gradient="0;#000000,1;#ffffff," f0-gradient="0;#000000,1;#ffffff," f1-style="SolidLine" f0-show-tangent-field="0" integral-color="#736bad" integral-use-gradient="0" f2-visible="0" f0-show-extrema="0" f0-style="SolidLine" f2-use-gradient="0" type="cartesian">
+        <equation-0 step="0.05">m(x) = (16/π²)∙sin(π∙x/4)∙(sin(5∙π/8)+sin(3∙π/8)−sin(3∙π/4)−sin(π/4))<differential x="0" y="1"/>
+        </equation-0>
+        <arg-min use="1">0</arg-min>
+        <arg-max use="1">4</arg-max>
+    </function>
+    <fonts>
+        <axes-font>Noto Sans</axes-font>
+        <label-font>Noto Sans</label-font>
+        <header-table-font>Noto Sans</header-table-font>
+    </fonts>
+</kmpdoc>
