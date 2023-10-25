@@ -5,12 +5,12 @@ void swap_first_and_last_node(LinkedList &list) {
     auto second = list.first->next;
     auto tmp_first = list.first;
     auto current = list.first;
-    Node* beforeLast = nullptr;
+    Node* before_last = nullptr;
     while (current->next) {
-        beforeLast = current;
+        before_last = current;
         current = current->next;
     }
-    beforeLast->next = tmp_first;
+    before_last->next = tmp_first;
     current->next = second;
     tmp_first->next = nullptr;
     list.first = current;
@@ -18,7 +18,7 @@ void swap_first_and_last_node(LinkedList &list) {
 }
 
 int main() {
-    LinkedList list;
+    LinkedList list{};
     list.push_back("Первый");
     list.push_back("Второй");
     list.push_back("Третий");
