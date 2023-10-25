@@ -14,13 +14,6 @@ struct Passenger {
     string destination;
     double price;
     string train_number;
-
-    void print() {
-        cout << name << endl;
-        cout << destination << endl;
-        cout << price << endl;
-        cout << train_number << endl;
-    }
 };
 
 Passenger input_passenger() {
@@ -41,11 +34,11 @@ Passenger input_passenger() {
     return p;
 }
 
-void add_passenger(string name, string destination, double price, string train_number) {
+void add_passenger(const Passenger &p) {
     ofstream file;
     file.open(FILE_NAME, ios::app);
-    file << endl << name + "&" + destination + "&" + 
-                std::to_string(price) + "&" + train_number;
+    file << endl << p.name + "&" + p.destination + "&" + 
+                std::to_string(p.price) + "&" + p.train_number;
     file.close();
 }
 
@@ -134,7 +127,6 @@ void print_table(const vector<Passenger> &data) {
             << "Стоимость" << "\t| " << "Номер" << "\t\t|" <<  endl;
     cout << "|\t\t\t\t\t| \t\t\t| "  << "билета, руб." << "\t| " << "поезда" << "\t|" <<  endl;
     print_line();
-    
     for (auto p: data) {
         string holder1 = p.name.length() <= 40 ? "\t\t\t| " : "\t\t| ";
         string holder2 = p.destination.length() < 10 ? "\t\t\t| " : p.destination.length() > 25 ? "\t| " : "\t\t| ";
@@ -156,7 +148,7 @@ int main() {
             break;
         case 2: {
             Passenger p = input_passenger();
-            add_passenger(p.name, p.destination, p.price, p.train_number);
+            add_passenger(p);
         }
             break;
         default:
