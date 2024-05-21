@@ -1,0 +1,26 @@
+program example14_2;
+var y, z: array[1..50] of integer;
+    i, k, n: integer;
+
+begin
+randomize;
+write('Введите размерность массива (меньше 50): ');
+readln(n);
+for i := 1 to n do begin
+  y[i] := random(200) - 100;
+  if ((y[i] mod 5) = 0) then y[i] := 0;
+end;
+k := 0;
+for i := 1 to n do
+  if (y[i] > 0) then begin
+    k := k + 1;
+    z[k] := y[i];
+  end;
+
+writeln('Массив y:');
+for i := 1 to n do write(y[i], ' ');
+writeln;
+writeln('Массив z:');
+for i := 1 to k do write(z[i], ' ');
+writeln;
+end.

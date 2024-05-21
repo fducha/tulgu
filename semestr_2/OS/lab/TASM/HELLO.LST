@@ -1,0 +1,28 @@
+Turbo Assembler	 Version 3.2	    26/11/23 19:34:06	    Page 1
+hello.ASM
+
+
+
+      1				     assume CS:code,DS:data
+      2	0000			     code segment
+      3	0000			     begin:
+      4	0000  B8 0000s		     mov AX,data
+      5	0003  8E D8		     mov DS,AX
+      6	0005  B4 09		     mov AH, 09h
+      7	0007  BA 0000r		     mov DX, offset msg
+      8	000A  CD 21		     int 21h
+      9
+     10	000C  B8 4C00		     mov AX, 4C00h
+     11	000F  CD 21		     int 21h
+     12	0011			     code ends
+     13
+     14	0000			     data segment
+     15	0000  48 65 6C 6C 6F 20	77+  msg db "Hello world!$"
+     16	      6F 72 6C 64 21 24
+     17	000D			     data ends
+     18
+     19	0000			     stk segment stack
+     20	0000  0100*(??)		     db	256 dup	(?)
+     21	0100			     stk ends
+     22				     end begin
+

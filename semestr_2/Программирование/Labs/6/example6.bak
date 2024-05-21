@@ -1,0 +1,23 @@
+program example6;
+var x, y: real;
+    a, b, h, sum: real;
+begin
+write('Введите a, b, h: ');
+read(a, b, h);
+{* writeln(' x,     y');*}
+x := a;
+sum := 0;
+while (x <= b) do begin
+  if (x > 0) then y := sqr(x)
+  else y := sqr(x) * x;
+  {* if (x >= 0) then write(' ');
+  write(x:1:2);
+  if (y >= 0) then write('   ')
+  else write('  ');
+  writeln(y:1:2); *}
+  sum := sum + y;
+  x := x + h;
+end;
+write('Сумма равна ');
+writeln(sum:1:2);
+end.

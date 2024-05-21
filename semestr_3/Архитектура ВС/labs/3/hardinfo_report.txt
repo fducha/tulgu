@@ -1,0 +1,1110 @@
+
+Компьютер
+******************
+
+
+Общая информация
+-------------------------------
+
+-Компьютер-
+Процессор		: AMD Ryzen 7 3800X 8-Core Processor
+Память		: 32773 Мб (2465 Мб занято)
+Тип машины		: Настольный компьютер
+Операционная система		: KDE neon 5.27
+Пользователь		: fducha (fducha)
+Дата/время		: Ср 28 фев 2024 18:08:18
+-Дисплей-
+Разрешение		: 3840x2160 пикселей
+Рендер OpenGL		: NVIDIA GeForce GTX 1660 SUPER/PCIe/SSE2
+Поставщик X11		: The X.Org Foundation
+-Аудио устройства-
+Звуковая карта		: HDA-Intel - HDA NVidia
+Звуковая карта		: HDA-Intel - HD-Audio Generic
+-Устройства ввода-
+ Power Button
+ Power Button
+ Compx 2.4G Receiver
+ Compx 2.4G Receiver Mouse
+ Compx 2.4G Receiver
+ Compx 2.4G Receiver Consumer Control
+ Compx 2.4G Receiver System Control
+ Logitech MX Vertical
+ HDA NVidia HDMI/DP,pcm:3
+ HDA NVidia HDMI/DP,pcm:7
+ HDA NVidia HDMI/DP,pcm:8
+ HDA NVidia HDMI/DP,pcm:9
+ HD-Audio Generic Front Mic
+ HD-Audio Generic Rear Mic
+ HD-Audio Generic Line
+ HD-Audio Generic Line Out Front
+ HD-Audio Generic Line Out Surround
+ HD-Audio Generic Line Out CLFE
+ HD-Audio Generic Front Headphone
+-Принтеры-
+Принтеры не найдены
+-SCSI диски-
+ATA Apacer AS350 512
+ATA WDC WDS480G2G0A-
+
+Операционная система
+---------------------------------------
+
+-Версия-
+Ядро		: Linux 6.5.0-21-generic (x86_64)
+Версия		: #21~22.04.1-Ubuntu SMP PREEMPT_DYNAMIC Fri Feb  9 13:32:52 UTC 2
+Библиотека C		: GNU C Library / (Ubuntu GLIBC 2.35-0ubuntu3.6) 2.35
+Дистрибутив		: KDE neon 5.27
+-Текущая сессия-
+Имя компьютера		: fduchara
+Пользователь		: fducha (fducha)
+Язык		: ru_RU.UTF-8 ()
+Домашний каталог		: /home/fducha
+-Разное-
+Время работы		: 9 минут
+Средняя нагрузка		: 0,31, 0,58, 0,41
+Доступная энтропия в /dev/random		: 256 бит (средняя)
+
+Модули ядра
+---------------------
+
+-Loaded Modules-
+ccm		: Counter with CBC MAC
+vboxnetadp		: Oracle VM VirtualBox Network Adapter Driver
+vboxnetflt		: Oracle VM VirtualBox Network Filter Driver
+vboxdrv		: Oracle VM VirtualBox Support Driver
+nvidia_uvm
+nvidia_drm
+nvidia_modeset
+snd_hda_codec_realtek		: Realtek HD-audio codec
+nvidia
+snd_hda_codec_generic		: Generic HD-audio codec parser
+ledtrig_audio		: LED trigger for audio mute control
+snd_hda_codec_hdmi		: HDMI HD-audio codec
+snd_hda_intel		: Intel HDA driver
+snd_intel_dspcfg		: Intel DSP config driver
+snd_intel_sdw_acpi		: Intel Soundwire ACPI helpers
+snd_hda_codec		: HDA codec core
+binfmt_misc
+snd_hda_core		: HD-audio bus
+rtw88_8822ce		: Realtek 802.11ac wireless 8822ce driver
+snd_hwdep		: Hardware dependent layer
+rtw88_8822c		: Realtek 802.11ac wireless 8822c driver
+snd_pcm		: Midlevel PCM code for ALSA.
+nls_iso8859_1
+intel_rapl_msr		: Driver for Intel RAPL (Running Average Power Limit) control via MSR interface
+rtw88_pci		: Realtek PCI 802.11ac wireless driver
+intel_rapl_common		: Intel Runtime Average Power Limit (RAPL) common code
+snd_seq_midi		: Advanced Linux Sound Architecture sequencer MIDI synth.
+rtw88_core		: Realtek 802.11ac wireless core module
+joydev		: Joystick device interfaces
+snd_seq_midi_event		: MIDI byte &lt;-&gt; sequencer event coder
+input_leds		: Input -&gt; LEDs Bridge
+snd_rawmidi		: Midlevel RawMidi code for ALSA.
+edac_mce_amd		: AMD MCE decoder
+snd_seq		: Advanced Linux Sound Architecture sequencer.
+mac80211		: IEEE 802.11 subsystem
+kvm_amd
+snd_seq_device		: ALSA sequencer device management
+snd_timer		: ALSA timer interface
+cfg80211		: wireless configuration support
+kvm
+drm_kms_helper		: DRM KMS helper
+snd		: Advanced Linux Sound Architecture driver for soundcards.
+ccp		: AMD Secure Processor driver
+soundcore		: Core sound module
+video		: ACPI Video Driver
+libarc4
+irqbypass		: IRQ bypass manager utility module
+k10temp		: AMD Family 10h+ CPU core temperature monitor
+rapl
+wmi_bmof		: WMI embedded Binary MOF driver
+mac_hid
+sch_fq_codel		: Fair Queue CoDel discipline
+msr		: x86 generic MSR driver
+parport_pc		: PC-style parallel port driver
+ppdev
+lp
+parport
+drm		: DRM bridge infrastructure
+efi_pstore		: EFI variable backend for pstore
+ip_tables		: IPv4 packet filter
+x_tables		: {ip,ip6,arp,eb}_tables backend module
+autofs4
+btrfs
+blake2b_generic		: BLAKE2b generic implementation
+xor
+raid6_pq		: RAID6 Q-syndrome calculations
+libcrc32c		: CRC32c (Castagnoli) calculations
+hid_logitech_hidpp
+hid_logitech_dj
+hid_generic		: HID generic driver
+usbhid		: USB HID core driver
+hid
+crct10dif_pclmul		: T10 DIF CRC calculation accelerated with PCLMULQDQ.
+ucsi_ccg		: UCSI driver for Cypress CCGx Type-C controller
+crc32_pclmul
+polyval_clmulni		: POLYVAL hash function accelerated by PCLMULQDQ-NI
+polyval_generic		: POLYVAL hash function
+typec_ucsi		: USB Type-C Connector System Software Interface driver
+ghash_clmulni_intel		: GHASH hash function, accelerated by PCLMULQDQ-NI
+typec		: USB Type-C Connector Class
+aesni_intel		: Rijndael (AES) Cipher Algorithm, Intel AES-NI instructions optimized
+crypto_simd
+cryptd		: Software async crypto daemon
+r8169		: RealTek RTL-8169 Gigabit Ethernet driver
+i2c_piix4		: PIIX4 SMBus driver
+i2c_nvidia_gpu		: Nvidia GPU I2C controller Driver
+realtek		: Realtek PHY driver
+ahci		: AHCI SATA low-level driver
+i2c_ccgx_ucsi
+xhci_pci		: xHCI PCI Host Controller Driver
+libahci		: Common AHCI SATA low-level routines
+xhci_pci_renesas
+wmi		: ACPI-WMI Mapping Driver
+gpio_amdpt		: AMD Promontory GPIO Driver
+
+Загрузки
+----------------
+
+-Загрузки-
+Wed Feb 28 20:59		: 6.5.0-21-generic
+Tue Feb 27 12:42		: 6.5.0-21-generic
+Mon Feb 26 18:14		: 6.5.0-21-generic
+Mon Feb 26 15:16		: 6.5.0-21-generic
+Fri Feb 23 15:05		: 6.5.0-18-generic
+Thu Feb 22 12:21		: 6.5.0-18-generic
+Wed Feb 21 10:40		: 6.5.0-18-generic
+Tue Feb 20 19:23		: 6.5.0-18-generic
+Tue Feb 20 15:12		: 6.5.0-18-generic
+Mon Feb 19 20:24		: 6.5.0-18-generic
+Sun Feb 18 15:43		: 6.5.0-18-generic
+Sat Feb 17 19:02		: 6.5.0-17-generic
+Sun Feb 11 12:54		: 6.5.0-17-generic
+Sat Feb 10 19:08		: 6.5.0-17-generic
+Wed Feb 7 20:05		: 6.5.0-15-generic
+Mon Feb 5 19:31		: 6.5.0-15-generic
+Tue Jan 30 20:20		: 6.5.0-15-generic
+Mon Jan 29 19:57		: 6.5.0-15-generic
+Sun Jan 28 19:14		: 6.5.0-15-generic
+Thu Jan 25 21:10		: 6.5.0-14-generic
+Wed Jan 24 16:57		: 6.5.0-14-generic
+Tue Jan 23 22:15		: 6.5.0-14-generic
+Mon Jan 22 21:27		: 6.5.0-14-generic
+Mon Jan 22 19:58		: 6.5.0-14-generic
+Mon Jan 22 19:04		: 6.5.0-14-generic
+Sat Jan 20 12:48		: 6.5.0-14-generic
+Wed Jan 17 19:46		: 6.2.0-39-generic
+Tue Jan 9 19:49		: 6.2.0-39-generic
+Mon Jan 8 19:12		: 6.2.0-39-generic
+Mon Jan 8 13:04		: 6.2.0-39-generic
+Sat Jan 6 16:21		: 6.2.0-39-generic
+Thu Jan 4 14:32		: 6.2.0-39-generic
+Sat Dec 30 15:57		: 6.2.0-39-generic
+Thu Dec 21 20:17		: 6.2.0-39-generic
+Tue Sep 19 19:56		: 6.2.0-39-generic
+Tue Sep 19 19:56		: 6.2.0-39-generic
+Thu Dec 14 19:49		: 6.2.0-39-generic
+Wed Dec 13 19:45		: 6.2.0-37-generic
+Tue Dec 12 21:16		: 6.2.0-37-generic
+Sun Dec 10 17:11		: 6.2.0-37-generic
+Tue Dec 5 19:06		: 6.2.0-37-generic
+Mon Dec 4 21:56		: 6.2.0-37-generic
+Sun Dec 3 11:18		: 6.2.0-37-generic
+Wed Nov 29 19:29		: 6.2.0-37-generic
+Mon Nov 27 18:53		: 6.2.0-37-generic
+Sun Nov 26 13:29		: 6.2.0-37-generic
+Sat Nov 25 15:39		: 6.2.0-37-generic
+Fri Nov 24 23:28		: 6.2.0-37-generic
+Thu Nov 23 19:13		: 6.2.0-37-generic
+Wed Nov 22 18:27		: 6.2.0-36-generic
+Mon Nov 20 21:51		: 6.2.0-36-generic
+Sat Nov 18 23:24		: 6.2.0-36-generic
+Thu Nov 16 19:40		: 6.2.0-36-generic
+Mon Nov 13 19:34		: 6.2.0-36-generic
+Sun Nov 12 20:14		: 6.2.0-36-generic
+Sun Nov 12 16:14		: 6.2.0-36-generic
+Thu Nov 9 19:11		: 6.2.0-36-generic
+Wed Nov 8 20:07		: 6.2.0-36-generic
+Tue Nov 7 18:59		: 6.2.0-35-generic
+Sat Nov 4 12:08		: 6.2.0-35-generic
+Fri Nov 3 23:55		: 6.2.0-35-generic
+Sun Oct 29 16:03		: 6.2.0-35-generic
+Sat Oct 28 12:34		: 6.2.0-35-generic
+Fri Oct 27 13:05		: 6.2.0-35-generic
+Thu Oct 26 19:06		: 6.2.0-35-generic
+Thu Oct 26 13:47		: 6.2.0-35-generic
+Thu Oct 26 13:38		: 6.2.0-35-generic
+Wed Oct 25 12:11		: 6.2.0-35-generic
+Wed Oct 25 12:10		: 6.2.0-35-generic
+Wed Oct 25 12:00		: 6.2.0-35-generic
+Tue Oct 24 09:30		: 6.2.0-35-generic
+Tue Oct 24 09:29		: 6.2.0-35-generic
+Mon Oct 23 16:49		: 6.2.0-35-generic
+Mon Oct 23 16:48		: 6.2.0-35-generic
+Mon Oct 23 16:30		: 6.2.0-35-generic
+Mon Oct 23 16:25		: 6.2.0-34-generic
+Fri Oct 20 13:19		: 6.2.0-34-generic
+Wed Oct 18 14:45		: 6.2.0-34-generic
+Wed Oct 18 14:43		: 6.2.0-34-generic
+Wed Oct 18 14:21		: 6.2.0-34-generic
+Wed Oct 18 14:20		: 6.2.0-34-generic
+Tue Oct 17 18:31		: 6.2.0-34-generic
+Tue Oct 17 00:16		: 6.2.0-34-generic
+Mon Oct 16 16:01		: 6.2.0-34-generic
+Sun Oct 15 15:58		: 6.2.0-34-generic
+Sat Oct 14 10:37		: 6.2.0-34-generic
+Sat Oct 14 10:36		: 6.2.0-34-generic
+Fri Oct 13 19:49		: 6.2.0-34-generic
+Thu Oct 12 15:46		: 6.2.0-34-generic
+Thu Oct 12 15:43		: 6.2.0-34-generic
+Thu Oct 12 14:40		: 6.2.0-34-generic
+Thu Oct 12 14:38		: 6.2.0-34-generic
+Wed Oct 11 18:31		: 6.2.0-34-generic
+Wed Oct 11 11:34		: 6.2.0-34-generic
+Wed Oct 11 11:33		: 6.2.0-34-generic
+Wed Oct 11 11:30		: 6.2.0-34-generic
+Tue Oct 10 12:46		: 6.2.0-34-generic
+Tue Oct 10 12:16		: 6.2.0-34-generic
+Tue Oct 10 12:15		: 6.2.0-34-generic
+Mon Oct 9 11:15		: 6.2.0-34-generic
+Sun Oct 8 20:13		: 6.2.0-34-generic
+Sun Oct 8 20:11		: 6.2.0-34-generic
+Sun Oct 8 19:41		: 6.2.0-34-generic
+Thu Oct 5 19:45		: 6.2.0-34-generic
+Thu Oct 5 19:44		: 6.2.0-34-generic
+Wed Oct 4 19:05		: 6.2.0-33-generic
+Wed Oct 4 19:04		: 6.2.0-33-generic
+Tue Oct 3 19:43		: 6.2.0-33-generic
+Tue Oct 3 19:40		: 6.2.0-33-generic
+Mon Oct 2 22:40		: 6.2.0-33-generic
+Mon Oct 2 22:37		: 6.2.0-33-generic
+Fri Sep 29 23:29		: 6.2.0-33-generic
+Wed Sep 27 19:06		: 6.2.0-33-generic
+Tue Sep 26 20:27		: 6.2.0-33-generic
+Tue Sep 26 20:20		: 6.2.0-33-generic
+Tue Sep 26 19:26		: 6.2.0-33-generic
+Mon Sep 25 19:30		: 6.2.0-33-generic
+Sun Sep 24 19:20		: 6.2.0-33-generic
+Sun Sep 24 19:19		: 6.2.0-33-generic
+Sun Sep 24 19:14		: 6.2.0-33-generic
+Sun Sep 24 19:11		: 6.2.0-32-generic
+Wed Sep 20 19:36		: 6.2.0-32-generic
+Mon Sep 18 20:16		: 6.2.0-32-generic
+Mon Sep 18 20:15		: 6.2.0-32-generic
+Mon Sep 18 23:01		: 6.2.0-32-generic
+Thu Sep 14 19:47		: 6.2.0-32-generic
+Wed Sep 13 12:21		: 6.2.0-32-generic
+Wed Sep 13 12:15		: 6.2.0-31-generic
+Wed Sep 6 17:58		: 6.2.0-31-generic
+Mon Sep 4 21:16		: 6.2.0-31-generic
+Mon Sep 4 16:56		: 6.2.0-31-generic
+Sun Sep 3 20:13		: 6.2.0-31-generic
+Sun Sep 3 15:36		: 6.2.0-31-generic
+Sat Sep 2 23:18		: 6.2.0-31-generic
+Sat Sep 2 18:06		: 6.2.0-31-generic
+Sat Sep 2 13:07		: 6.2.0-31-generic
+Sat Sep 2 13:01		: 6.2.0-26-generic
+Fri Sep 1 16:06		: 6.2.0-26-generic
+Tue Aug 29 00:32		: 6.2.0-26-generic
+Thu Aug 24 22:57		: 6.2.0-26-generic
+Tue Aug 22 16:05		: 6.2.0-26-generic
+Mon Aug 21 15:21		: 6.2.0-26-generic
+Sun Aug 20 13:21		: 6.2.0-26-generic
+Fri Aug 18 17:37		: 6.2.0-26-generic
+Fri Aug 18 12:42		: 6.2.0-26-generic
+Thu Aug 17 15:11		: 6.2.0-26-generic
+Wed Aug 16 14:41		: 6.2.0-26-generic
+Wed Aug 16 14:40		: 6.2.0-26-generic
+Wed Aug 16 14:26		: 6.2.0-26-generic
+Tue Aug 15 20:18		: 6.2.0-26-generic
+Mon Aug 14 12:29		: 6.2.0-26-generic
+Mon Aug 14 12:26		: 6.2.0-26-generic
+Mon Aug 14 11:51		: 6.2.0-26-generic
+Sun Aug 13 12:23		: 6.2.0-26-generic
+Sat Aug 12 20:53		: 6.2.0-26-generic
+Sat Aug 12 20:33		: 6.2.0-26-generic
+Sat Aug 12 20:16		: 6.2.0-26-generic
+Sat Aug 12 20:12		: 5.19.0-50-generi
+Sat Aug 12 22:51		: 5.19.0-50-generi
+
+Языки
+----------
+
+-Available Languages-
+en_US.utf8		: English locale for the USA
+ru_RU.utf8		: Russian locale for Russia
+C.utf8		: C locale
+
+Файловые системы
+-------------------------------
+
+-Mounted File Systems-
+udev	/dev	0,00 % (15,6 ГиБ of 15,6 ГиБ)	
+tmpfs	/run	0,10 % (3,1 ГиБ of 3,1 ГиБ)	
+/dev/sdb1	/	47,83 % (229,0 ГиБ of 439,0 ГиБ)	
+tmpfs	/dev/shm	0,00 % (15,6 ГиБ of 15,6 ГиБ)	
+tmpfs	/run/lock	0,08 % (5,0 МиБ of 5,0 МиБ)	
+efivarfs	/sys/firmware/efi/efivars	12,64 % (111,8 КиБ of 128,0 КиБ)	
+/dev/loop0	/snap/bare/5	100,00 % (0,0 Б of 128,0 КиБ)	
+/dev/loop1	/snap/core18/2796	100,00 % (0,0 Б of 55,8 МиБ)	
+/dev/loop2	/snap/core18/2812	100,00 % (0,0 Б of 55,8 МиБ)	
+/dev/loop3	/snap/core22/1033	100,00 % (0,0 Б of 74,1 МиБ)	
+/dev/loop4	/snap/core22/864	100,00 % (0,0 Б of 74,0 МиБ)	
+/dev/loop5	/snap/cups/1024	100,00 % (0,0 Б of 66,6 МиБ)	
+/dev/loop6	/snap/cups/980	100,00 % (0,0 Б of 66,6 МиБ)	
+/dev/loop7	/snap/drawio/201	100,00 % (0,0 Б of 117,0 МиБ)	
+/dev/loop8	/snap/drawio/202	100,00 % (0,0 Б of 117,1 МиБ)	
+/dev/loop9	/snap/gnome-3-28-1804/198	100,00 % (0,0 Б of 164,9 МиБ)	
+/dev/loop10	/snap/gnome-42-2204/132	100,00 % (0,0 Б of 497,0 МиБ)	
+/dev/loop12	/snap/gtk-common-themes/1535	100,00 % (0,0 Б of 91,8 МиБ)	
+/dev/loop11	/snap/gnome-42-2204/141	100,00 % (0,0 Б of 497,0 МиБ)	
+tmpfs	/tmp	0,00 % (15,6 ГиБ of 15,6 ГиБ)	
+/dev/loop13	/snap/snapd/20290	100,00 % (0,0 Б of 40,9 МиБ)	
+/dev/loop14	/snap/snapd/20671	100,00 % (0,0 Б of 40,5 МиБ)	
+/dev/sda5	/media/WinData	0,10 % (99,9 ГиБ of 100,0 ГиБ)	
+/dev/sda1	/boot/efi	2,86 % (578,1 МиБ of 595,1 МиБ)	
+tmpfs	/run/snapd/ns	0,10 % (3,1 ГиБ of 3,1 ГиБ)	
+tmpfs	/run/user/1000	0,00 % (3,1 ГиБ of 3,1 ГиБ)	
+
+Дисплей
+--------------
+
+-Дисплей-
+Разрешение		: 3840x2160 пикселей
+Производитель		: The X.Org Foundation
+Версия		: 1.21.1.4
+Имя текущего дисплея		: :0
+-Монитор-
+Монитор 0		: 3840x2160 пикселей
+-OpenGL-
+Производитель		: NVIDIA Corporation
+Рендер		: NVIDIA GeForce GTX 1660 SUPER/PCIe/SSE2
+Версия		: 4.6.0 NVIDIA 535.154.05
+Графическое ускорение		: Да
+-Расширения-
+Composite
+DAMAGE
+DOUBLE-BUFFER
+DPMS
+DRI2
+DRI3
+GLX
+Generic Event Extension
+MIT-SCREEN-SAVER
+MIT-SHM
+NV-CONTROL
+NV-GLX
+Present
+RANDR
+RECORD
+RENDER
+SECURITY
+SHAPE
+SYNC
+X-Resource
+XC-MISC
+XFIXES
+XFree86-DGA
+XFree86-VidModeExtension
+XINERAMA
+XINERAMA
+XInputExtension
+XKEYBOARD
+XTEST
+XVideo
+default screen number:    0
+
+Переменные среды
+-------------------------------
+
+-Переменные среды-
+SHELL		: /bin/bash
+WINDOWID		: 4194314
+QT_ACCESSIBILITY		: 1
+QT_SCREEN_SCALE_FACTORS		: DVI-D-0=1;HDMI-0=1;DP-0=1;DP-1=1;
+COLORTERM		: truecolor
+XDG_CONFIG_DIRS		: /home/fducha/.config/kdedefaults:/etc/xdg/xdg-plasma:/etc/xdg
+XDG_SESSION_PATH		: /org/freedesktop/DisplayManager/Session1
+LANGUAGE
+LC_ADDRESS		: ru_RU.UTF-8
+LC_NAME		: ru_RU.UTF-8
+SSH_AUTH_SOCK		: /tmp/ssh-XXXXXXyqRb3O/agent.1560
+SHELL_SESSION_ID		: e9a33fca3b62467b8eeb7c3b64eb4d72
+DESKTOP_SESSION		: plasma
+LC_MONETARY		: ru_RU.UTF-8
+SSH_AGENT_PID		: 1614
+GTK_RC_FILES		: /etc/gtk/gtkrc:/home/fducha/.gtkrc:/home/fducha/.config/gtkrc
+XCURSOR_SIZE		: 24
+KDE_FORK_SLAVES		: 1
+XDG_SEAT		: seat0
+PWD		: /home/fducha
+XDG_SESSION_DESKTOP		: KDE
+LOGNAME		: fducha
+XDG_SESSION_TYPE		: x11
+GPG_AGENT_INFO		: /run/user/1000/gnupg/S.gpg-agent:0:1
+SYSTEMD_EXEC_PID		: 1712
+XAUTHORITY		: /tmp/xauth_fJZtWo
+GTK2_RC_FILES		: /etc/gtk-2.0/gtkrc:/home/fducha/.gtkrc-2.0:/home/fducha/.config/gtkrc-2.0
+HOME		: /home/fducha
+LC_PAPER		: ru_RU.UTF-8
+LANG		: ru_RU.UTF-8
+LS_COLORS		: rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP		: KDE
+KONSOLE_DBUS_SERVICE		: :1.59
+QT_EXCLUDE_GENERIC_BEARER		: 1
+KONSOLE_DBUS_SESSION		: /Sessions/1
+PROFILEHOME
+KCRASH_DUMP_ONLY		: 1
+XDG_SEAT_PATH		: /org/freedesktop/DisplayManager/Seat0
+INVOCATION_ID		: 03135f4b208245289309d39b5a7a0733
+KONSOLE_VERSION		: 230804
+MANAGERPID		: 1541
+KDE_SESSION_UID		: 1000
+LESSCLOSE		: /usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS		: user
+TERM		: xterm-256color
+LC_IDENTIFICATION		: ru_RU.UTF-8
+LESSOPEN		: | /usr/bin/lesspipe %s
+USER		: fducha
+COLORFGBG		: 15;0
+KDE_SESSION_VERSION		: 5
+PAM_KWALLET5_LOGIN		: /run/user/1000/kwallet5.socket
+DISPLAY		: :0
+SHLVL		: 2
+LC_TELEPHONE		: ru_RU.UTF-8
+MOZ_USE_XINPUT2		: 1
+LC_MEASUREMENT		: ru_RU.UTF-8
+XDG_VTNR		: 2
+XDG_SESSION_ID		: 3
+XDG_RUNTIME_DIR		: /run/user/1000
+DEBUGINFOD_URLS		: https://debuginfod.neon.kde.org/:
+LC_TIME		: ru_RU.UTF-8
+QT_AUTO_SCREEN_SCALE_FACTOR		: 0
+JOURNAL_STREAM		: 8:37208
+XCURSOR_THEME		: breeze_cursors
+XDG_DATA_DIRS		: /usr/share/plasma:/usr/share/gnome:/home/fducha/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share:/var/lib/snapd/desktop
+KDE_FULL_SESSION		: true
+PATH		: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+DBUS_SESSION_BUS_ADDRESS		: unix:path=/run/user/1000/bus
+KDE_APPLICATIONS_AS_SCOPE		: 1
+LC_NUMERIC		: ru_RU.UTF-8
+KONSOLE_DBUS_WINDOW		: /Windows/1
+_		: /usr/bin/hardinfo
+
+Разработка
+--------------------
+
+-Скриптовые языки-
+Gambas3 (gbr3)		: Не найдено
+Python		: Не найдено
+Python2		: Не найдено
+Python3		: 3.10.12
+Perl		: 5.34.0
+Perl6 (VM)		: Не найдено
+Perl6		: Не найдено
+PHP		: Не найдено
+Ruby		: 3.0.2
+Bash		: 5.1.16(1)-release
+-Компиляторы-
+C (GCC)		: 11.4.0
+C (Clang)		: Не найдено
+D (dmd)		: Не найдено
+Gambas3 (gbc3)		: Не найдено
+Java		: Не найдено
+CSharp (Mono, old)		: Не найдено
+CSharp (Mono)		: Не найдено
+Vala		: Не найдено
+Haskell (GHC)		: Не найдено
+FreePascal		: 3.2.2
+Go		: Не найдено
+-Инструменты-
+make		: 4.3
+GDB		: (Ubuntu 12.1-0ubuntu1~22.04) 12.1
+strace		: 5.16
+valgrind		: Не найдено
+QMake		: Не найдено
+CMake		: Не найдено
+Gambas3 IDE		: Не найдено
+
+Пользователи
+------------------------
+
+-Пользователи-
+root		: root
+daemon		: daemon
+bin		: bin
+sys		: sys
+sync		: sync
+games		: games
+man		: man
+lp		: lp
+mail		: mail
+news		: news
+uucp		: uucp
+proxy		: proxy
+www-data		: www-data
+backup		: backup
+list		: Mailing List Manager
+irc		: ircd
+gnats		: Gnats Bug-Reporting System (admin)
+nobody		: nobody
+systemd-network		: systemd Network Management
+systemd-resolve		: systemd Resolver
+messagebus
+systemd-timesync		: systemd Time Synchronization
+syslog
+_apt
+tss		: TPM software stack
+uuidd
+tcpdump
+avahi-autoipd		: Avahi autoip daemon
+usbmux		: usbmux daemon
+dnsmasq		: dnsmasq
+avahi		: Avahi mDNS daemon
+cups-pk-helper		: user for cups-pk-helper service
+rtkit		: RealtimeKit
+fwupd-refresh		: fwupd-refresh user
+saned
+colord		: colord colour management daemon
+sddm		: Simple Desktop Display Manager
+geoclue
+_flatpak		: Flatpak system-wide installation helper
+pulse		: PulseAudio daemon
+hplip		: HPLIP system user
+fducha		: fducha
+nvidia-persistenced		: NVIDIA Persistence Daemon
+systemd-coredump		: systemd Core Dumper
+snapd-range-524288-root
+snap_daemon
+
+Группы
+------------
+
+-Group-
+root		: 0
+daemon		: 1
+bin		: 2
+sys		: 3
+adm		: 4
+tty		: 5
+disk		: 6
+lp		: 7
+mail		: 8
+news		: 9
+uucp		: 10
+man		: 12
+proxy		: 13
+kmem		: 15
+dialout		: 20
+fax		: 21
+voice		: 22
+cdrom		: 24
+floppy		: 25
+tape		: 26
+sudo		: 27
+audio		: 29
+dip		: 30
+www-data		: 33
+backup		: 34
+operator		: 37
+list		: 38
+irc		: 39
+src		: 40
+gnats		: 41
+shadow		: 42
+utmp		: 43
+video		: 44
+sasl		: 45
+plugdev		: 46
+staff		: 50
+games		: 60
+users		: 100
+nogroup		: 65534
+systemd-journal		: 101
+systemd-network		: 102
+systemd-resolve		: 103
+crontab		: 104
+messagebus		: 105
+systemd-timesync		: 106
+input		: 107
+sgx		: 108
+kvm		: 109
+render		: 110
+syslog		: 111
+_ssh		: 112
+tss		: 113
+bluetooth		: 114
+ssl-cert		: 115
+uuidd		: 116
+tcpdump		: 117
+avahi-autoipd		: 118
+netdev		: 119
+avahi		: 120
+lpadmin		: 121
+rtkit		: 122
+fwupd-refresh		: 123
+scanner		: 124
+saned		: 125
+colord		: 126
+sddm		: 127
+geoclue		: 128
+_flatpak		: 129
+pulse		: 130
+pulse-access		: 131
+lxd		: 132
+sambashare		: 999
+fducha		: 1000
+nvidia-persistenced		: 133
+vboxusers		: 134
+systemd-coredump		: 135
+snapd-range-524288-root		: 524288
+snap_daemon		: 584788
+rdma		: 136
+winbindd_priv		: 137
+
+Устройства
+********************
+
+
+Процессор
+------------------
+
+-Processors-
+Информация о комплекте	
+AMD Ryzen 7 3800X 8-Core Processor	0	0:0	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	1	0:1	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	2	0:2	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	3	0:3	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	4	0:4	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	5	0:5	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	6	0:6	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	7	0:7	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	8	0:0	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	9	0:1	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	10	0:2	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	11	0:3	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	12	0:4	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	13	0:5	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	14	0:6	3900,00 МГц	
+AMD Ryzen 7 3800X 8-Core Processor	15	0:7	3900,00 МГц	
+
+Память
+------------
+
+-Memory-
+MemTotal	Общая память	32773200 КиБ	
+MemFree	Свободная память	28392188 КиБ	
+MemAvailable		29856796 КиБ	
+Buffers		122840 КиБ	
+Cached		1732120 КиБ	
+SwapCached	Кэш подкачки	0 КиБ	
+Active		2848664 КиБ	
+Inactive		838584 КиБ	
+Active(anon)		1905880 КиБ	
+Inactive(anon)		5132 КиБ	
+Active(file)		942784 КиБ	
+Inactive(file)		833452 КиБ	
+Unevictable		0 КиБ	
+Mlocked		0 КиБ	
+SwapTotal	Виртуальная память	0 КиБ	
+SwapFree	Свободная виртуальная память	0 КиБ	
+Zswap		0 КиБ	
+Zswapped		0 КиБ	
+Dirty		108 КиБ	
+Writeback		0 КиБ	
+AnonPages		1832476 КиБ	
+Mapped		781752 КиБ	
+Shmem		78304 КиБ	
+KReclaimable		105912 КиБ	
+Slab		310372 КиБ	
+SReclaimable		105912 КиБ	
+SUnreclaim		204460 КиБ	
+KernelStack		15272 КиБ	
+PageTables		29872 КиБ	
+SecPageTables		0 КиБ	
+NFS_Unstable		0 КиБ	
+Bounce		0 КиБ	
+WritebackTmp		0 КиБ	
+CommitLimit		16386600 КиБ	
+Committed_AS		5740104 КиБ	
+VmallocTotal		-1 КиБ	
+VmallocUsed		103540 КиБ	
+VmallocChunk		0 КиБ	
+Percpu		22784 КиБ	
+HardwareCorrupted		0 КиБ	
+AnonHugePages		0 КиБ	
+ShmemHugePages		0 КиБ	
+ShmemPmdMapped		0 КиБ	
+FileHugePages		0 КиБ	
+FilePmdMapped		0 КиБ	
+Unaccepted		0 КиБ	
+HugePages_Total		0	
+HugePages_Free		0	
+HugePages_Rsvd		0	
+HugePages_Surp		0	
+Hugepagesize		2048 КиБ	
+Hugetlb		0 КиБ	
+DirectMap4k		620376 КиБ	
+DirectMap2M		7690240 КиБ	
+DirectMap1G		25165824 КиБ	
+
+Устройства PCI
+------------------------
+
+-PCI Devices-
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Root Complex
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge (prog-if 00 [Normal decode])
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse GPP Bridge (prog-if 00 [Normal decode])
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] (prog-if 00 [Normal decode])
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse PCIe Dummy Host Bridge
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] Starship/Matisse Internal PCIe GPP Bridge 0 to bus[E:B] (prog-if 00 [Normal decode])
+SMBus		: Advanced Micro Devices, Inc. [AMD] FCH SMBus Controller (rev 61)
+ISA bridge		: Advanced Micro Devices, Inc. [AMD] FCH LPC Bridge (rev 51)
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 0
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 1
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 2
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 3
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 4
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 5
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 6
+Host bridge		: Advanced Micro Devices, Inc. [AMD] Matisse/Vermeer Data Fabric: Device 18h; Function 7
+USB controller		: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset USB 3.1 XHCI Controller (rev 01) (prog-if 30 [XHCI])
+SATA controller		: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset SATA Controller (rev 01) (prog-if 01 [AHCI 1.0])
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Bridge (rev 01) (prog-if 00 [Normal decode])
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01) (prog-if 00 [Normal decode])
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01) (prog-if 00 [Normal decode])
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01) (prog-if 00 [Normal decode])
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01) (prog-if 00 [Normal decode])
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01) (prog-if 00 [Normal decode])
+PCI bridge		: Advanced Micro Devices, Inc. [AMD] 400 Series Chipset PCIe Port (rev 01) (prog-if 00 [Normal decode])
+Network controller		: Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+SATA controller		: ASMedia Technology Inc. ASM1062 Serial ATA Controller (rev 02) (prog-if 01 [AHCI 1.0])
+Ethernet controller		: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller (rev 15)
+VGA compatible controller		: NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+Audio device		: NVIDIA Corporation TU116 High Definition Audio Controller (rev a1)
+USB controller		: NVIDIA Corporation TU116 USB 3.1 Host Controller (rev a1) (prog-if 30 [XHCI])
+Serial bus controller		: NVIDIA Corporation TU116 USB Type-C UCSI Controller (rev a1)
+
+Устройства USB
+------------------------
+
+-Устройства USB-
+Linux Foundation 3.0 root hub
+Linux Foundation 2.0 root hub
+Linux Foundation 3.0 root hub
+Linux Foundation 2.0 root hub
+Linux Foundation 3.0 root hub
+Logitech, Inc. Unifying Receiver
+Areson Technology Corp 2.4G Receiver
+Linux Foundation 2.0 root hub
+
+Принтеры
+----------------
+
+-Принтеры-
+Принтеры не найдены
+
+Батарея
+--------------
+
+-No batteries-
+Батареи не найдены на этой системе
+
+Сенсоры
+--------------
+
+-Sensors-
+k10temp/temp1	Temperature	41,38°C	
+k10temp/temp3	Temperature	48,25°C	
+
+Устройства ввода
+-------------------------------
+
+-Input Devices-
+ Power Button
+ Power Button
+ Compx 2.4G Receiver
+ Compx 2.4G Receiver Mouse
+ Compx 2.4G Receiver
+ Compx 2.4G Receiver Consumer Control
+ Compx 2.4G Receiver System Control
+ Logitech MX Vertical
+ HDA NVidia HDMI/DP,pcm:3
+ HDA NVidia HDMI/DP,pcm:7
+ HDA NVidia HDMI/DP,pcm:8
+ HDA NVidia HDMI/DP,pcm:9
+ HD-Audio Generic Front Mic
+ HD-Audio Generic Rear Mic
+ HD-Audio Generic Line
+ HD-Audio Generic Line Out Front
+ HD-Audio Generic Line Out Surround
+ HD-Audio Generic Line Out CLFE
+ HD-Audio Generic Front Headphone
+
+Устройства хранения
+-------------------------------------
+
+-SCSI диски-
+ATA Apacer AS350 512
+ATA WDC WDS480G2G0A-
+
+DMI
+---
+
+-Продукт-
+Название		: B450 Steel Legend
+Семейство		: To Be Filled By O.E.M.
+Производитель		: To Be Filled By O.E.M.
+Версия		: To Be Filled By O.E.M.
+-BIOS-
+Дата		: 02/25/2022
+Производитель		: American Megatrends Inc. (American Megatrends, www.ami.com)
+Версия		: P4.30
+-Плата-
+Название		: B450 Steel Legend
+Производитель		: ASRock
+Версия		: (Недоступно, попробуйте выполнить HardInfo с правами администратора.)
+Серийный номер		: (Недоступно, попробуйте выполнить HardInfo с правами администратора.)
+Asset Tag		: (Недоступно, попробуйте выполнить HardInfo с правами администратора.)
+-Шасси-
+Производитель		: To Be Filled By O.E.M.
+Тип		: [3] Настольный компьютер
+Версия		: To Be Filled By O.E.M.
+Серийный номер		: (Недоступно, попробуйте выполнить HardInfo с правами администратора.)
+Asset Tag		: To Be Filled By O.E.M.
+
+Память SPD
+----------------
+
+-SPD-
+Пожалуйста, загрузите модуль eeprom для получения информации о памяти SPD
+
+Ресурсы
+--------------
+
+-I/O Ports-
+<tt>0000-0000 </tt>		: PCI Bus 0000:00
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>0000-0000 </tt>		: PCI Bus 0000:00
+<tt>0000-0000 </tt>		: PCI Bus 0000:00
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>    0000-0000 </tt>		: <b><small>PCI</small></b>  NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+<tt>    0000-0000 </tt>		: <b><small>PCI</small></b>  NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+<tt>    0000-0000 </tt>		: <b><small>PCI</small></b>  NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+<tt>    0000-0000 </tt>		: <b><small>PCI</small></b>  NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+<tt>    0000-0000 </tt>		: <b><small>PCI</small></b>  NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>    0000-0000 </tt>		: <b><small>PCI</small></b>  NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>    0000-0000 </tt>		: <b><small>PCI</small></b>  NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>0000-0000 </tt>		: PCI Bus 0000:00
+<tt>0000-0000 </tt>		: PCI Bus 0000:00
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>    0000-0000 </tt>		: <b><small>PCI</small></b>  NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+<tt>      0000-0000 </tt>		: PCI Bus 0000:05
+<tt>        0000-0000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>      0000-0000 </tt>		: PCI Bus 0000:05
+<tt>        0000-0000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>          0000-0000 </tt>		: <b><small>Module</small></b> Realtek PCI 802.11ac wireless driver
+<tt>        0000-0000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>          0000-0000 </tt>		: <b><small>Module</small></b> Realtek PCI 802.11ac wireless driver
+<tt>        0000-0000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>          0000-0000 </tt>		: <b><small>Module</small></b> Realtek PCI 802.11ac wireless driver
+<tt>        0000-0000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>          0000-0000 </tt>		: <b><small>Module</small></b> Realtek PCI 802.11ac wireless driver
+<tt>        0000-0000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>          0000-0000 </tt>		: <b><small>Module</small></b> Realtek PCI 802.11ac wireless driver
+<tt>      0000-0000 </tt>		: PCI Bus 0000:05
+<tt>        0000-0000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>          0000-0000 </tt>		: <b><small>Module</small></b> Realtek PCI 802.11ac wireless driver
+<tt>  0000-0000 </tt>		: PCI Bus 0000:09
+<tt>    0000-0000 </tt>		: <b><small>PCI</small></b>  NVIDIA Corporation TU116 [GeForce GTX 1660 SUPER] (rev a1) (prog-if 00 [VGA controller])
+-Memory-
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>        00000000-00000000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>        00000000-00000000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>          00000000-00000000 </tt>		: <b><small>Module</small></b> Realtek PCI 802.11ac wireless driver
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>        00000000-00000000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>          00000000-00000000 </tt>		: <b><small>Module</small></b> Realtek PCI 802.11ac wireless driver
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>        00000000-00000000 </tt>		: <b><small>PCI</small></b>  Realtek Semiconductor Co., Ltd. RTL8822CE 802.11ac PCIe Wireless Network Adapter
+<tt>          00000000-00000000 </tt>		: <b><small>Module</small></b> Realtek PCI 802.11ac wireless driver
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>      00000000-00000000 </tt>		: <b><small>Module</small></b> AMD Secure Processor driver
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>    00000000-00000000 </tt>		: pnp 00:06
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>00000000-00000000 </tt>		: Reserved
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>  00000000-00000000 </tt>		: Kernel bss
+<tt>00000000-00000000 </tt>		: Reserved
+-DMA-
+<tt> 4</tt>		: cascade
+
+Сеть
+********
+
+
+Интерфейсы
+--------------------
+
+-Network Interfaces-
+lo	0,15 МиБ	0,15 МиБ	127.0.0.1	
+enp8s0	0,00 МиБ	0,00 МиБ		
+wlp5s0	30,42 МиБ	1,15 МиБ	192.168.0.10	
+
+IP Подключения
+-------------------------
+
+-Connections-
+
+Таблица маршрутизации
+-----------------------------------------
+
+-IP routing table-
+
+Таблица ARP
+------------------
+
+-Таблица ARP-
+192.168.0.7	4c:ba:d7:36:4e:d6	wlp5s0	
+192.168.0.1	10:a3:b8:ff:33:d8	wlp5s0	
+
+DNS сервера
+------------------
+
+-Name Servers-
+127.0.0.53		: localhost
+
+Статистика
+--------------------
+
+
+Общие каталоги
+---------------------------
+
+-SAMBA-
+printers		: /var/spool/samba
+print$		: /var/lib/samba/printers
+Shared		: /home/fducha/Shared
+-NFS-
+No NFS exports
