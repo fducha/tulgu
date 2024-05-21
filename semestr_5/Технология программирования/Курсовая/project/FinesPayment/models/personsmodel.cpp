@@ -52,19 +52,19 @@ QVariant PersonsModel::data(const QModelIndex &index, int role) const {
     if (role == Qt::DisplayRole) {
         switch (index.column()) {
         case 0:
-            return m_repo->persons().at(index.row()).id();
+            return m_repo->persons().at(index.row())->id();
         case 1:
-            return m_repo->persons().at(index.row()).familyName();
+            return m_repo->persons().at(index.row())->familyName();
         case 2:
-            return m_repo->persons().at(index.row()).name();
+            return m_repo->persons().at(index.row())->name();
         case 3:
-            return m_repo->persons().at(index.row()).surName();
+            return m_repo->persons().at(index.row())->surName();
         case 4:
-            return m_repo->persons().at(index.row()).birthDay().toString("dd.MM.yyyy");
+            return m_repo->persons().at(index.row())->birthDay().toString("dd.MM.yyyy");
         case 5:
-            return m_repo->persons().at(index.row()).passport();
+            return m_repo->persons().at(index.row())->passport();
         case 6:
-            return m_repo->persons().at(index.row()).license();
+            return m_repo->persons().at(index.row())->license();
         default:
             return QVariant();
         }

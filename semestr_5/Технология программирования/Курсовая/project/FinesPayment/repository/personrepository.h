@@ -8,8 +8,9 @@ class PersonRepository : AbstractRepository
 {
 public:
     PersonRepository(DBHelper *helper);
+    ~PersonRepository();
 
-    QList<Person> persons();
+    QList<Person*> persons() const;
 
     // передаем ссылку, т.к. объекту будет установлен id
     // при добавлении в БД
@@ -20,7 +21,7 @@ public:
     Person person(int id) const;
 
 private:
-    QList<Person> m_persons{};
+    QList<Person*> m_persons{};
 
     bool hasPerson(const Person &person) const;
 };
