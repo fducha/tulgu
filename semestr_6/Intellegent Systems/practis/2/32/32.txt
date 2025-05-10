@@ -1,0 +1,34 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+    pair = p(integer, integer).
+    pList = pair*.
+
+class predicates
+    culc : (intList, pList [out]).
+    into : (integer, pList, pList [out]).
+
+clauses
+    into(X, [], [p(X, 1)]) :- !.
+    into(X, [p(Y, N) | T], [p(Y, N1) | T]) :- X = Y, !, N1 = N + 1.
+    into(X, [H | T], [H | T1]) :- into(X, T, T1).
+    culc([], []) :- !.
+    culc([X], [p(X, 1)]) :- !.
+    culc([H | T], L) :- culc(T, T1), into(H, T1, L).
+
+    run() :-
+        L = [6, -3, 1, 7, 9, 9, 14, 9, 23, 7, 7],
+        stdio::writef("Список: %", L), nl,
+        culc(L, L32),
+        stdio::writef("Список элементов и числа их вхождения:\n%", L32),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

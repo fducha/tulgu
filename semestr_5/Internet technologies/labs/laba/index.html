@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа</title>
+    <style>
+        table {
+            table-layout: fixed;
+            width: 100%;
+        }
+        td {
+            overflow: hidden;
+            width: 20px;
+        }
+    </style>
+    <script>
+        let colors = ['gold', 'maroon', 'green', 'olive',
+            'navy', 'purple', 'teal', 'silver', 'gray', 'red',
+            'lime', 'yellow', 'blue', 'fuchsia', 'aqua', 'brown'];
+
+        function getColor(n) {
+            if (n < 16) {
+                return colors[n-1];
+            } else return 'black';
+        }
+        function displayTable() {
+            var num = parseInt(document.forma.position.value);
+            if (isNaN(num)) {
+                alert("Введено НЕ число!!");
+                return;
+            }
+
+            document.getElementById("tableDiv").innerHTML = renderTable(num);
+        }
+        function renderTable(position) {
+            var table = "<table border='1px'>";
+            for (let i = 0; i <= 25; i++) {
+                table += "<tr>";
+                for (let j = 0; j <= 80; j++) {
+                    if (i == 0 && j == 0) {
+                        table += "<td align='center'></td>";
+                    } else if (i == 0 && j > 0) {
+                        table += "<td align='center'>" + j + "</td>";
+                    } else if (i > 0 && j == 0) {
+                        table += "<td align='center'>" + i + "</td>";
+                    } else {
+                        var text = "";
+                        var mes = "";
+                        if (i == position && j == position) {
+                            text = "<font color='" + getColor(position) + "'>" + position + "</font>"
+                        } else { text = ""; }
+                        if (position > 25 || position < 1) {
+                            mes = "Позиция (" + position + ", " + position + ") отсутствует.";
+                        }
+                        table += "<td align='center'>" + text + " </td>";
+                        document.getElementById("message").innerText = mes;
+                    }
+                }
+                table += "</tr>";
+            }
+            table += "</table>";
+            return table;
+        }
+
+        function renderPalette() {
+            var pal = "";
+            for (let i = 0; i < colors.length; i++) {
+                const clr = colors[i];
+                pal += "<div style='width: 50px; height: 50px; display: table-cell; background-color: " + 
+                    clr + ";'>" + (i + 1) + "</div>";
+            }
+            document.getElementById("palette").innerHTML = pal;
+        }
+
+        document.addEventListener('DOMContentLoaded', () => {
+            renderPalette();
+        });
+
+    </script>
+</head>
+
+<body>
+    <p>
+    <h1>Лабораторная работа</h1>
+    </p>
+    <p>
+    <h2>Вариант № 3</h2>
+    </p>
+    <p>
+    <h2>Задание на работу: </h2> Вывести символ "n" в позициях (n, n) цветом n, если это возможно.
+    В противном случае выдать соответствующее сообщение. Количество позиций по горизонтали – 80,
+    по вертикали – 25, цветов – 16.
+    </p>
+    <hr>
+    <form name="forma">
+        <p>Введите номер позиции:
+            <input type="text" name="position">
+            <input type="button" value="Показать позицию" onclick="displayTable();">
+        </p>
+    </form>
+    <div id="palette" style="display: table;"></div>
+    <div id="message" style="color: red;"></div>
+    <div id="tableDiv">
+        Hello
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    conc : (intList, intList, intList [out]).
+    shiftN : (integer Direction, integer Shift, intList Source, intList Result [out]) nondeterm.
+
+clauses
+    conc([], L, L).
+    conc([H | T], L, [H | L1]) :-
+        conc(T, L, L1).
+
+    shiftN(Direction, Shift, Source, Result) :-
+        Direction > 0,
+        splitByEndPos(Source, Shift, End, Begin),
+        conc(End, Begin, Result), !;
+        splitByPos(Source, Shift, Begin, End),
+        conc(End, Begin, Result), !.
+
+    run() :-
+        L = [6, -3, 1, 7, 9, 9, 14, 9, 23, 7, 7],
+        stdio::writef("Список: %", L), nl,
+        stdio::write("Введите направление сдвига (1 - вправо, -1 - влево): "),
+        D = stdio::read(), hasDomain(integer, D),
+        stdio::write("Введите значение сдвига: "),
+        S = stdio::read(), hasDomain(integer, S),
+        shiftN(D, S, L, L29),
+        stdio::writef("Список после сдвига: %", L29),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

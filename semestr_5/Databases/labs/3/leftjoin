@@ -1,0 +1,6 @@
+SELECT clients.name AS client, SUM(orders.count * products.price) AS price
+FROM orders 
+LEFT JOIN clients ON orders.client_id = clients.id
+LEFT JOIN products ON orders.articul = products.articul
+GROUP BY client;
+

@@ -1,0 +1,27 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    getPreLast : (intList, integer [out]) determ.
+
+clauses
+    getPreLast([H, _], H) :- !.
+    getPreLast([_ | T], R) :- getPreLast(T, R).
+
+    run() :-
+        L = [6, -3, 1, 9, -8, 14, 23, 7, -13],
+        stdio::writef("Список чисел: %", L), nl,
+        getPreLast(L, R),
+        stdio::writef("Предпоследний элемент в списке равен: %", R),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

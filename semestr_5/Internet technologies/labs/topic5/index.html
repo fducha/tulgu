@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button Demo!!</title>
+    <script>
+        function btnClick() {
+            var value = document.TestForm.bt.value;
+            var name = document.TestForm.bt.name;
+            document.write("<HR>");
+            document.write("Вы нажали кнопку " + String(value).bold() + ", name = " + String(name).bold());
+            document.write("<HR>");
+        }
+    </script>
+</head>
+<body bgcolor="white">
+    <h1>Нажмите кнопку</h1>
+    <form name="TestForm">
+        <p>
+            <input type="button" value="Жмаккай уже!!" name="bt" onclick="btnClick();">
+        </p>
+    </form>
+</body>
+</html>

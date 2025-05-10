@@ -1,0 +1,48 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    reverseImp : (intList, intList, intList [out]).
+    reverse : (intList, intList [out]).
+    splitByPos : (intList, integer, intList [out], intList [out]) determ.
+    splitByEndPos : (intList, integer, intList [out], intList [out]) determ.
+
+clauses
+    reverseImp([H | L1], L2, R) :-
+        reverseImp(L1, [H | L2], R).
+    reverseImp([], L, L).
+    reverse(L, R) :-
+        reverseImp(L, [], R).
+
+    splitByPos(L, 0, [], L) :-
+        !.
+    splitByPos([H | T], N, [H | Before], After) :-
+        N1 = N - 1,
+        splitByPos(T, N1, Before, After).
+
+    splitByEndPos(L, N, R1, R2) :-
+        reverse(L, T),
+        splitByPos(T, N, T1, T2),
+        reverse(T1, R1),
+        reverse(T2, R2).
+
+    run() :-
+        L = [6, -3, 1, 9, -8, 14, 23, 7, -13],
+        stdio::writef("Список чисел: %", L), nl,
+        stdio::write("Введите номер позиции (с конца) для разделения: "),
+        N = stdio::read(), hasDomain(integer, N),
+        splitByEndPos(L, N, L21B, L21A),
+        stdio::writef("Список после % позиции (включительно): %\n", N, L21B),
+        stdio::writef("Список до % позиции: %", N, L21A),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

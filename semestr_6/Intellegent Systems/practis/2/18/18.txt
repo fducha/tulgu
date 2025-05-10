@@ -1,0 +1,30 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+    strList = string_list.
+
+class predicates
+    sublist : (intList, integer, intList [out]) nondeterm.
+
+clauses
+    sublist(X, 0, X).
+    sublist([_ | T], N, R) :- N1 = N - 1, sublist(T, N1, R).
+
+    run() :-
+        L = [6, -3, 1, 9, -8, 14, 23, 7, -13],
+        stdio::writef("Список чисел: %", L), nl,
+        stdio::write("Введите номер элемента (нумерация начинается с 0): "),
+        N = stdio::read(), hasDomain(integer, N),
+        sublist(L, N, L18),
+        stdio::writef("Подсписок начиная позиции № %: %", N, L18),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

@@ -1,0 +1,32 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    mem : (integer, intList) determ.
+    setof : (intList, intList [out]) nondeterm.
+
+clauses
+    mem(_, []) :- fail.
+    mem(X, [X | _]) :- !.
+    mem(X, [_ | T]) :- mem(X, T).
+    setof([], []).
+    setof([H | T], [H | R]) :- setof(T, R), not(mem(H, R)).
+    setof([H | T], R) :- setof(T, R), mem(H, R).
+
+    run() :-
+        L = [6, -3, 1, 7, 9, 9, 14, 9, 23, 7, 7],
+        stdio::writef("Список чисел: %", L), nl,
+        setof(L, L25),
+        stdio::writef("Список без дубликатов: %", L25),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

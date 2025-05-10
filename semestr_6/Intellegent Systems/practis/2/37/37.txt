@@ -1,0 +1,37 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    transpose : (intList*, intList* [out]) nondeterm.
+    transpose_1st_col : (intList*, intList [out], intList* [out]) determ.
+    printMatrix : (intList*) determ.
+
+clauses
+    transpose([[] | _], []).
+    transpose(Matrix, [Row | Rows]) :- 
+	    transpose_1st_col(Matrix, Row, RestMatrix), 
+        transpose(RestMatrix, Rows).
+    transpose_1st_col([], [], []).
+    transpose_1st_col([[H | T] | Rows], [H | Hs], [T | Ts]) :-
+        transpose_1st_col(Rows, Hs, Ts).
+
+    printMatrix([]) :- !.
+    printMatrix([Row | T]) :- stdio::write(Row), nl, printMatrix(T).
+
+    run() :-
+        M = [[1, 2, 3, 4], [5, 6, 7, 8], [9, 10, 11, 12], [13, 14, 15, 16]],
+        stdio::write("Матрица:\n"), printMatrix(M),
+        transpose(M, R),
+        stdio::write("Транспонированная матрица:\n"), printMatrix(R),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

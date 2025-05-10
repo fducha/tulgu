@@ -1,0 +1,39 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    element : (integer, integer, integer [out], intList, intList [out]) determ.
+    remove : (integer, integer, intList, intList [out]) determ.
+
+clauses
+    element(1, A, B, [B | L], [A | L]) :- !.
+    element(Y, A, B, [C | L], [C | L1]) :- Y1 = Y - 1, 
+	    element(Y1, A, B, L, L1).
+    remove(X, X, L, L) :- !.
+    remove(X, Y, [A | L], [A | L1]) :- X > 1, X < Y, !,
+        X1 = X - 1, Y1 = Y - 1, remove(X1, Y1, L, L1).
+    remove(1, Y, [A | L], [B | L1]) :- !, Y1 = Y - 1,
+        element(Y1, A, B, L, L1).
+    remove(X, Y, L, R) :- Y > 0, remove(Y, X, L, R).
+
+    run() :-
+        L = [6, -3, 1, 7, 9, 9, 14, 9, 23, 7, 7],
+        stdio::writef("Список чисел: %", L), nl,
+        stdio::write("Введите номер 1-го элемента: "),
+        N = stdio::read(), hasDomain(integer, N),
+        stdio::write("Введите номер 2-го элемента: "),
+        M = stdio::read(), hasDomain(integer, M),
+        remove(N, M, L, L26),
+        stdio::writef("Список перестановки элементов: %", L26),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

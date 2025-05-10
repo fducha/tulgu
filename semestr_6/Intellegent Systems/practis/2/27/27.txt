@@ -1,0 +1,33 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    strList = string*.
+
+class predicates
+    place : (string, strList, strList [out]) multi.
+    perm : (strList, strList [out]) multi.
+    permAll : (strList) failure.
+
+clauses
+%    предикат успешен если 3ий аргумент есть список, полученный вставкой 1го аргумент в произвольное место
+%    списка, являющегося 2м аргументом
+    place(X, L, [X | L]).
+    place(X, [H | L], [H | R]) :- place(X, L, R).
+    perm([], []).
+    perm([H | L], Z) :- perm(L, Y), place(H, Y, Z).
+    permAll(L) :- perm(L, R), stdio::write(R), nl, fail.
+
+    run() :-
+        L = ["привет", "Жорик", "как дела"],
+        stdio::writef("Список: %", L), nl,
+        stdio::write("Все перестановки:\n"),
+        permAll(L), fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

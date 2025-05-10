@@ -1,0 +1,31 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+    strList = string_list.
+
+class predicates
+    splitOddEven : (intList, intList [out], intList [out]) nondeterm.
+
+clauses
+    splitOddEven([X], [X], []).
+    splitOddEven([X, Y], [X], [Y]).
+    splitOddEven([X, Y | T], [X | T1], [Y | T2]) :-
+        splitOddEven(T, T1, T2).
+
+    run() :-
+        L = [6, -3, 1, 9, -8],
+        stdio::writef("Список чисел: %", L), nl,
+        splitOddEven(L, L17O, L17E),
+        stdio::writef("Список элементов с НЕчетными номерами позиции: %\n", L17O),
+        stdio::writef("Список элементов с четными номерами позиции: %", L17E),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

@@ -1,0 +1,29 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+    strList = string_list.
+
+class predicates
+    positiv : (intList, intList [out]).
+
+clauses
+    positiv([H | T], [math::abs(H) | NT]) :-
+        positiv(T, NT).
+    positiv([], []).
+
+    run() :-
+        L = [6, -3, 1, 9, -8],
+        stdio::writef("Список чисел: %", L),
+        nl,
+        positiv(L, L11),
+        stdio::writef("Список неотрицательных чисел: %", L11),
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

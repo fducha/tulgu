@@ -1,0 +1,35 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    conc : (intList, intList, intList [out]).
+    insertSublist : (intList Source, integer Position, intList Sublist, intList Result [out]) determ.
+
+clauses
+    conc([], L, L).
+    conc([H | T], L, [H | L1]) :- conc(T, L, L1).
+    insertSublist(L, 1, SL, Result) :- conc(SL, L, Result), !.
+    insertSublist([H | T], Pos, SL, [H | Result]) :- NextPos = Pos - 1,
+        insertSublist(T, NextPos, SL, Result).
+
+    run() :-
+        L = [6, -3, 1, 7, 9, 9, 14, 9, 23, 7, 7],
+        stdio::writef("Список: %", L), nl,
+        SL = [14, 9, 23],
+        stdio::writef("Подсписок: %", SL), nl,
+        stdio::write("Введите номер позиции для вставки: "),
+        N = stdio::read(), hasDomain(integer, N),
+        insertSublist(L, N, SL, R),
+        stdio::writef("Подсписок вставлен в список в % позиции: %", N, R),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

@@ -1,0 +1,38 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    del : (intList, intList [out]) determ.
+    delFirst : (integer, intList, intList [out]) determ.
+    reverseImp : (intList, intList, intList [out]).
+    reverse : (intList, intList [out]).
+    delLast : (integer, intList, intList [out]) determ.
+
+clauses
+    del([_ | T], T).
+    delFirst(1, S, R) :- del(S, R), !.
+    delFirst(N, S, R) :- N1 = N - 1, del(S, R1), delFirst(N1, R1, R).
+    reverseImp([H | L1], L2, R) :- reverseImp(L1, [H | L2], R).
+    reverseImp([], L, L).
+    reverse(L, R) :- reverseImp(L, [], R).
+    delLast(N, S, R) :- reverse(S, R1), delFirst(N, R1, R2), reverse(R2, R).
+
+    run() :-
+        L = [6, -3, 1, 9, -8, 14, 23, 7, -13],
+        stdio::writef("Список чисел: %", L), nl,
+        stdio::write("Введите количество удаляемых с конца элементов: "),
+        N = stdio::read(), hasDomain(integer, N),
+        delLast(N, L, L19),
+        stdio::writef("Результат удаления % элементов:\n%", N, L19),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

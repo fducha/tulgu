@@ -1,0 +1,50 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    reverseImp : (intList, intList, intList [out]).
+    reverse : (intList, intList [out]).
+    splitByPos : (intList, integer, intList [out], intList [out]) determ.
+    splitByEndPos : (intList, integer, intList [out], intList [out]) determ.
+    conc : (intList, intList, intList [out]).
+    sublistFromTo : (integer From, integer To, intList Source, intList Result [out]) nondeterm.
+
+clauses
+    reverseImp([H | L1], L2, R) :- reverseImp(L1, [H | L2], R).
+    reverseImp([], L, L).
+    reverse(L, R) :- reverseImp(L, [], R).
+	
+    splitByPos(L, 0, [], L) :- !.
+    splitByPos([H | T], N, [H | Before], After) :- N1 = N - 1,
+        splitByPos(T, N1, Before, After).
+		
+    splitByEndPos(L, N, R1, R2) :- reverse(L, T), splitByPos(T, N, T1, T2),
+        reverse(T1, R1), reverse(T2, R2).
+		
+    conc([H | T], L, [H | L1]) :- conc(T, L, L1).
+    conc([], L, L).
+	
+    sublistFromTo(M, N, L, R) :- splitByPos(L, N, Left, _),
+        splitByEndPos(Left, N - M + 1, R, _).
+
+    run() :-
+        L = [6, -3, 1, 7, 9, 9, 14, 9, 23, 7, 7],
+        stdio::writef("Список: %", L), nl,
+        stdio::write("Введите номер позиции начала подсписка: "),
+        M = stdio::read(), hasDomain(integer, M),
+        stdio::write("Введите номер позиции окончания подсписка: "),
+        N = stdio::read(), hasDomain(integer, N),
+        sublistFromTo(M, N, L, R),
+        stdio::writef("Подсписок от % до % позиции: %", M, N, R),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

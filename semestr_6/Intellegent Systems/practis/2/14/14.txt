@@ -1,0 +1,35 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+    strList = string_list.
+
+class predicates
+    negPosImp : (intList, integer, intList [out]) determ.
+    negPos : (intList, intList [out]) determ.
+
+clauses
+    negPosImp([], _, []) :- !.
+    negPosImp([H | T], K, [K | T1]) :-
+        H < 0, !, K1 = K + 1,
+        negPosImp(T, K1, T1).
+    negPosImp([H | T], K, T1) :-
+        H >= 0, !, K1 = K + 1,
+        negPosImp(T, K1, T1).
+    negPos(L, R) :- negPosImp(L, 1, R).
+
+    run() :-
+        L = [6, -3, 1, 9, -8],
+        stdio::writef("Список чисел: %", L), nl,
+        negPos(L, L14),
+        stdio::writef("Список позиций отрицательных чисел: %", L14),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

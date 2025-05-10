@@ -1,0 +1,40 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    length : (intList, integer [out]).
+    splitByPos : (intList, integer, intList [out], intList [out]) determ.
+    firstPosSublist : (intList Source, intList SubList, integer Position [out]) determ.
+
+clauses
+    length([], 0).
+    length([_ | T], L) :- length(T, LT), L = LT + 1.
+
+    splitByPos(L, 0, [], L) :- !.
+    splitByPos([H | T], N, [H | Before], After) :-
+        N1 = N - 1, splitByPos(T, N1, Before, After).
+
+    firstPosSublist(L, SL, 1) :-
+        length(SL, Res), splitByPos(L, Res, R, _), R = SL, !.
+    firstPosSublist([_ | T], SL, R) :-
+        firstPosSublist(T, SL, R1), R = R1 + 1.
+
+    run() :-
+        L = [6, -3, 1, 7, 9, 9, 14, 9, 23, 7, 7],
+        stdio::writef("Список: %", L), nl,
+        SL = [14, 9, 23],
+        stdio::writef("Подсписок: %", SL), nl,
+        firstPosSublist(L, SL, R),
+        stdio::writef("Первая позиция подсписка в списке: %", R),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

@@ -1,0 +1,36 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    multy : (intList A, intList B, intList Result [out]) determ.
+    sumIntList : (intList L, integer Result [out]).
+    scalarPro : (intList A, intList B, integer Result [out]) determ.
+
+clauses
+    multy([], [], []).
+    multy([H1 | T1], [H2 | T2], [H1 * H2 | Result]) :-
+        multy(T1, T2, Result).
+
+    sumIntList([], 0) :- !.
+    sumIntList([H | T], R) :- sumIntList(T, R1), R = R1 + H.
+    scalarPro(A, B, R) :- multy(A, B, R1), sumIntList(R1, R).
+
+    run() :-
+        L1 = [1, 2, 3],
+        stdio::writef("Первый вектор: %", L1), nl,
+        L2 = [4, 5, 3],
+        stdio::writef("Второй вектор: %", L2), nl,
+        scalarPro(L1, L2, L31),
+        stdio::writef("Скалярное произведение векторов: %", L31),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

@@ -1,0 +1,31 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+    strList = string_list.
+
+class predicates
+    splitPosNeg : (intList, intList [out], intList [out]).
+
+clauses
+    splitPosNeg([], [], []).
+    splitPosNeg([H | T], [H | T1], T2) :- H < 0, !, 
+        splitPosNeg(T, T1, T2).
+    splitPosNeg([H | T], T1, [H | T2]) :-
+        splitPosNeg(T, T1, T2).
+
+    run() :-
+        L = [6, -3, 1, 9, -8],
+        stdio::writef("Список чисел: %", L), nl,
+        splitPosNeg(L, L16N, L16P),
+        stdio::writef("Список положительных элементов: %\n", L16P),
+        stdio::writef("Список отрицательных элементов: %", L16N),
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

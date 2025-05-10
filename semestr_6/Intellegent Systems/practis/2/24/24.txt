@@ -1,0 +1,30 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    delDoubleImp : (integer, intList, intList [out]).
+    delDouble : (intList, intList [out]).
+
+clauses
+    delDoubleImp(A, [A | B], C) :- !, delDoubleImp(A, B, C).
+    delDoubleImp(_, [A | B], [A | C]) :- !, delDoubleImp(A, B, C).
+    delDoubleImp(_, _, []).
+    delDouble(L, R) :- delDoubleImp(1, L, R).
+
+    run() :-
+        L = [6, -3, 1, 9, 9, 14, 23, 7, 7],
+        stdio::writef("Список чисел: %", L), nl,
+        delDouble(L, L24),
+        stdio::writef("Список без дубликатов: %", L24),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

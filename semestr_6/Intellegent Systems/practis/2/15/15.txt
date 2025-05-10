@@ -1,0 +1,31 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+    strList = string_list.
+
+class predicates
+    delEven : (intList, intList [out]).
+
+clauses
+    delEven([], []).
+    delEven([X], [X]) :-
+        !.
+    delEven([X, _ | T], [X | T2]) :-
+        delEven(T, T2).
+
+    run() :-
+        L = [6, -3, 1, 9, -8],
+        stdio::writef("Список чисел: %", L),
+        nl,
+        delEven(L, L15),
+        stdio::writef("Список без четных элементов: %", L15),
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

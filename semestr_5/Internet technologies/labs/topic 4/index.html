@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Просмотр записей</title>
+    <script>
+        class MyRecord {
+            constructor(name, family, phone, address) {
+                this.name = name;
+                this.family = family;
+                this.phone = phone;
+                this.address = address;
+                this.secure = false;
+            }
+
+            printRecord() {
+                document.write("<tr><td>Имя:</td><td>" + String(this.name).italics() + "</td></tr>");
+                document.write("<tr><td>Фамилия:</td><td>" + String(this.family).italics() + "</td></tr>");
+                document.write("<tr><td>Телефон:</td><td>" + String(this.phone).italics() + "</td></tr>");
+                document.write("<tr><td>Адрес:</td><td>" + String(this.address).italics() + "</td></tr>");
+            }
+
+            printTableHead() {
+                var sec = this.secure ? " (Secure)" : " (Unsecure)".fontcolor("red");
+                document.write("<table><caption align='left'>" + this.name + " " +
+                    this.family + sec + "</caption>");
+                document.write("<th align='left'>Поле записи</th>" + 
+                    "<th align='left'>Содержимое</th>");
+            }
+
+            printTableEnd() {
+                document.write("</table><p>");
+            }
+
+            print() {
+                this.printTableHead();
+                this.printRecord();
+                this.printTableEnd();
+            }
+        }
+
+    </script>
+</head>
+
+<body bgcolor="white">
+    <h1>JS TEST</h1>
+    <script>
+        var dt = new Date();
+        var dateStr = "Date: " + dt.getDate() + "." + dt.getMonth() + "." + dt.getFullYear();
+        document.write(dateStr);
+        document.write("<BR>");
+        document.write("Time: " + dt.getHours() + ":" + dt.getMinutes() + ":" + dt.getSeconds());
+
+
+        var rec1 = new MyRecord("Иванов", "Иван", "123456789", "г. Москва, Кремль - 1");
+        var rec2 = new MyRecord("Иванова", "Светлана", "987654321", "г. Москва, Кремль - 7");
+        rec2.secure = true;
+
+        rec1.print();
+        rec2.print();
+    </script>
+    
+</body>
+
+</html>

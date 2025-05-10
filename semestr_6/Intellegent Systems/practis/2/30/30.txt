@@ -1,0 +1,29 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    multy : (intList A, intList B, intList Result [out]) determ.
+
+clauses
+    multy([], [], []).
+    multy([H1 | T1], [H2 | T2], [H1 * H2 | Result]) :- multy(T1, T2, Result).
+
+    run() :-
+        L1 = [1, 2, 3],
+        stdio::writef("Первый список: %", L1), nl,
+        L2 = [4, 5, 3],
+        stdio::writef("Второй список: %", L2), nl,
+        multy(L1, L2, L30),
+        stdio::writef("Результат перемножения поэлементно: %", L30),
+        fail;
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

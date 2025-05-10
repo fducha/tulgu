@@ -1,0 +1,46 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+
+class predicates
+    reverseImp : (intList, intList, intList [out]).
+    reverse : (intList, intList [out]).
+    factor : (integer, integer) determ.
+    isPrime : (integer) determ.
+    primeList : (integer, intList [out]) multi.
+
+clauses
+    reverseImp([H | L1], L2, R) :- reverseImp(L1, [H | L2], R).
+    reverseImp([], L, L).
+    reverse(L, R) :- reverseImp(L, [], R).
+    
+    % это предикат, который находит делители числа N
+    % если число X делится на число Y без остатка, то это записывается в базу данных; 
+    % если число Y больше квадратного корня из числа X, то проверяется следующее число Y
+    factor(X, Y) :- X mod Y = 0, !.
+    factor(X, Y) :- Z = X * 1.00000000001, hasDomain(math::uReal, Z),
+        math::sqrt(Z) > Y, Y1 = Y + 2, factor(X, Y1).
+    
+    % это предикат, который проверяет, является ли число N простым;
+    isPrime(N) :- N > 3, N mod 2 = 1, not(factor(N, 3)), !.
+    isPrime(3). isPrime(2). isPrime(1).
+
+    primeList(N, L) :- N <= 0, L = [];
+        isPrime(N), N - 1 = NN, primeList(NN, LL), L = [N | LL];
+        NN = N - 1, primeList(NN, L).
+
+    run() :-
+        stdio::write("Введите натуральное число: "),
+        M = stdio::read(), hasDomain(integer, M),
+        primeList(M, R1), reverse(R1, R),
+        stdio::writef("Список простых чисел, не превосходящих %:\n%", M, R), !,
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).

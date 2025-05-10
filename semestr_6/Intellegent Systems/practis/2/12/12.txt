@@ -1,0 +1,28 @@
+% Copyright
+
+implement main
+    open core, console
+
+domains
+    intList = integer*.
+    strList = string_list.
+
+class predicates
+    doubler : (intList, intList [out]).
+
+clauses
+    doubler([H | T], [H * 2 | NT]) :-
+        doubler(T, NT).
+    doubler([], []).
+
+    run() :-
+        L = [6, 3, 1, 9, 8],
+        stdio::writef("Список чисел: %", L), nl,
+        doubler(L, L11),
+        stdio::writef("Список удвоенных чисел: %", L11),
+        _ = stdio::readLine().
+
+end implement main
+
+goal
+    console::runUtf8(main::run).
